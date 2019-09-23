@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */; };
+		CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D1EE23389B2A0070E843 /* Constant.swift */; };
+		CEE9BA5623326B84000FAC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9BA5523326B84000FAC42 /* AppDelegate.swift */; };
+		CEE9BA5823326B84000FAC42 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9BA5723326B84000FAC42 /* LoginVC.swift */; };
+		CEE9BA5B23326B84000FAC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE9BA5923326B84000FAC42 /* Main.storyboard */; };
+		CEE9BA5D23326B85000FAC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE9BA5C23326B85000FAC42 /* Assets.xcassets */; };
+		CEE9BA6023326B85000FAC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE9BA5E23326B85000FAC42 /* LaunchScreen.storyboard */; };
+		CEE9BA6B23327E75000FAC42 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9BA6A23327E75000FAC42 /* RegisterVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Foodey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.release.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.release.xcconfig"; sourceTree = "<group>"; };
+		CE50D1EE23389B2A0070E843 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CEE9BA5223326B84000FAC42 /* The Foodey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Foodey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE9BA5523326B84000FAC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEE9BA5723326B84000FAC42 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CEE9BA5A23326B84000FAC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEE9BA5C23326B85000FAC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE9BA5F23326B85000FAC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEE9BA6123326B85000FAC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE9BA6A23327E75000FAC42 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		E9A3F886A0AB1EBD6C884225 /* Pods-The Foodey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.debug.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE9BA4F23326B84000FAC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E67482879AB4A47779914C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69173A81B73EEF65C1E9B485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3F886A0AB1EBD6C884225 /* Pods-The Foodey.debug.xcconfig */,
+				7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE50D1EC233898660070E843 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE50D1ED2338986E0070E843 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE50D1EE23389B2A0070E843 /* Constant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CEE9BA4923326B84000FAC42 = {
+			isa = PBXGroup;
+			children = (
+				CEE9BA5423326B84000FAC42 /* The Foodey */,
+				CEE9BA5323326B84000FAC42 /* Products */,
+				69173A81B73EEF65C1E9B485 /* Pods */,
+				2E67482879AB4A47779914C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE9BA5323326B84000FAC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9BA5223326B84000FAC42 /* The Foodey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE9BA5423326B84000FAC42 /* The Foodey */ = {
+			isa = PBXGroup;
+			children = (
+				CE50D1ED2338986E0070E843 /* Helper */,
+				CE50D1EC233898660070E843 /* Model */,
+				CEE9BA6823326BBD000FAC42 /* Support FIles */,
+				CEE9BA6723326BA7000FAC42 /* Controller */,
+				CEE9BA6923326BCC000FAC42 /* View */,
+				CEE9BA6123326B85000FAC42 /* Info.plist */,
+			);
+			path = "The Foodey";
+			sourceTree = "<group>";
+		};
+		CEE9BA6723326BA7000FAC42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9BA5723326B84000FAC42 /* LoginVC.swift */,
+				CEE9BA6A23327E75000FAC42 /* RegisterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEE9BA6823326BBD000FAC42 /* Support FIles */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9BA5523326B84000FAC42 /* AppDelegate.swift */,
+				CEE9BA5C23326B85000FAC42 /* Assets.xcassets */,
+				CEE9BA5E23326B85000FAC42 /* LaunchScreen.storyboard */,
+			);
+			path = "Support FIles";
+			sourceTree = "<group>";
+		};
+		CEE9BA6923326BCC000FAC42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9BA5923326B84000FAC42 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE9BA5123326B84000FAC42 /* The Foodey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE9BA6423326B85000FAC42 /* Build configuration list for PBXNativeTarget "The Foodey" */;
+			buildPhases = (
+				E5B683D22B40E2234FD9D740 /* [CP] Check Pods Manifest.lock */,
+				CEE9BA4E23326B84000FAC42 /* Sources */,
+				CEE9BA4F23326B84000FAC42 /* Frameworks */,
+				CEE9BA5023326B84000FAC42 /* Resources */,
+				D43EBCCDEB2F1FF57860138F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Foodey";
+			productName = "The Foodey";
+			productReference = CEE9BA5223326B84000FAC42 /* The Foodey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE9BA4A23326B84000FAC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = LastBlade;
+				TargetAttributes = {
+					CEE9BA5123326B84000FAC42 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = CEE9BA4D23326B84000FAC42 /* Build configuration list for PBXProject "The Foodey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEE9BA4923326B84000FAC42;
+			productRefGroup = CEE9BA5323326B84000FAC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE9BA5123326B84000FAC42 /* The Foodey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE9BA5023326B84000FAC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE9BA6023326B85000FAC42 /* LaunchScreen.storyboard in Resources */,
+				CEE9BA5D23326B85000FAC42 /* Assets.xcassets in Resources */,
+				CEE9BA5B23326B84000FAC42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D43EBCCDEB2F1FF57860138F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Foodey/Pods-The Foodey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Foodey/Pods-The Foodey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Foodey/Pods-The Foodey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B683D22B40E2234FD9D740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Foodey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE9BA4E23326B84000FAC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE9BA6B23327E75000FAC42 /* RegisterVC.swift in Sources */,
+				CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */,
+				CEE9BA5823326B84000FAC42 /* LoginVC.swift in Sources */,
+				CEE9BA5623326B84000FAC42 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEE9BA5923326B84000FAC42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE9BA5A23326B84000FAC42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE9BA5E23326B85000FAC42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE9BA5F23326B85000FAC42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE9BA6223326B85000FAC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEE9BA6323326B85000FAC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE9BA6523326B85000FAC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A3F886A0AB1EBD6C884225 /* Pods-The Foodey.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Foodey/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaoniiuc.The-Foodey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEE9BA6623326B85000FAC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Foodey/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shaoniiuc.The-Foodey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE9BA4D23326B84000FAC42 /* Build configuration list for PBXProject "The Foodey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE9BA6223326B85000FAC42 /* Debug */,
+				CEE9BA6323326B85000FAC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE9BA6423326B85000FAC42 /* Build configuration list for PBXNativeTarget "The Foodey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE9BA6523326B85000FAC42 /* Debug */,
+				CEE9BA6623326B85000FAC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE9BA4A23326B84000FAC42 /* Project object */;
+}
