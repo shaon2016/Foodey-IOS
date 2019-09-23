@@ -28,7 +28,6 @@ class LoginVC: UIViewController {
         doLogin()
     }
     
-
     
     //MARK: Networking
     func doLogin() {
@@ -47,23 +46,29 @@ class LoginVC: UIViewController {
                     print("Failed to login")
                 }
             }
-        }else {
+        } else {
             print("Insert mobile and password")
         }
     }
 
     func handleLoginJSON(loginJSON : JSON) {
-        
         print(loginJSON)
+        
         let status = loginJSON["success"].int
         print(status!)
         
         if status == 1 {
             print("Successfully login")
+            // Go to home page // Here homeVC is the storyboard viewcontroller id
+            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
+            present(homeVC!, animated: true, completion: nil)
             
+//            dismiss(animated: false, completion: nil)
         } else {
             print("Credential mismatch")
         }
     }
+    
+
 }
 
