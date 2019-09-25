@@ -10,6 +10,9 @@
 		06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */; };
 		CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D1EE23389B2A0070E843 /* Constant.swift */; };
 		CEDC81372338E870009C858F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC81362338E870009C858F /* HomeVC.swift */; };
+		CEDC813923390B44009C858F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813823390B44009C858F /* Food.swift */; };
+		CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813A23393EF3009C858F /* FoodCell.swift */; };
+		CEE6E739233BF48C0051840A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6E738233BF48C0051840A /* DataService.swift */; };
 		CEE9BA5623326B84000FAC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9BA5523326B84000FAC42 /* AppDelegate.swift */; };
 		CEE9BA5823326B84000FAC42 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9BA5723326B84000FAC42 /* LoginVC.swift */; };
 		CEE9BA5B23326B84000FAC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE9BA5923326B84000FAC42 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.release.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.release.xcconfig"; sourceTree = "<group>"; };
 		CE50D1EE23389B2A0070E843 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CEDC81362338E870009C858F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CEDC813823390B44009C858F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		CEDC813A23393EF3009C858F /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		CEE6E738233BF48C0051840A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CEE9BA5223326B84000FAC42 /* The Foodey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Foodey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE9BA5523326B84000FAC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE9BA5723326B84000FAC42 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		CE50D1EC233898660070E843 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC813823390B44009C858F /* Food.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,6 +83,14 @@
 				CE50D1EE23389B2A0070E843 /* Constant.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		CEE6E737233BF44B0051840A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEE6E738233BF48C0051840A /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CEE9BA4923326B84000FAC42 = {
@@ -99,6 +114,7 @@
 		CEE9BA5423326B84000FAC42 /* The Foodey */ = {
 			isa = PBXGroup;
 			children = (
+				CEE6E737233BF44B0051840A /* Service */,
 				CE50D1ED2338986E0070E843 /* Helper */,
 				CE50D1EC233898660070E843 /* Model */,
 				CEE9BA6823326BBD000FAC42 /* Support FIles */,
@@ -133,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE9BA5923326B84000FAC42 /* Main.storyboard */,
+				CEDC813A23393EF3009C858F /* FoodCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,9 +271,12 @@
 			files = (
 				CEE9BA6B23327E75000FAC42 /* RegisterVC.swift in Sources */,
 				CEDC81372338E870009C858F /* HomeVC.swift in Sources */,
+				CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */,
 				CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */,
 				CEE9BA5823326B84000FAC42 /* LoginVC.swift in Sources */,
 				CEE9BA5623326B84000FAC42 /* AppDelegate.swift in Sources */,
+				CEDC813923390B44009C858F /* Food.swift in Sources */,
+				CEE6E739233BF48C0051840A /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

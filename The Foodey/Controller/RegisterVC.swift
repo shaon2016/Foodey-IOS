@@ -63,7 +63,7 @@ class RegisterVC: UIViewController {
             present(homeVC!, animated: true, completion: nil)
             //            dismiss(animated: false, completion: nil)
         } else {
-            print(message)
+            print(message!)
         }
     }
     

@@ -23,6 +23,12 @@ class LoginVC: UIViewController {
     
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
     @IBAction func loginButtonClicked(_ sender: Any) {
         doLogin()
@@ -54,19 +60,22 @@ class LoginVC: UIViewController {
     func handleLoginJSON(loginJSON : JSON) {
         print(loginJSON)
         
-        let status = loginJSON["success"].int
-        print(status!)
-        
-        if status == 1 {
-            print("Successfully login")
-            // Go to home page // Here homeVC is the storyboard viewcontroller id
-            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
-            present(homeVC!, animated: true, completion: nil)
+        if let status = loginJSON["success"].int {
             
-//            dismiss(animated: false, completion: nil)
-        } else {
-            print("Credential mismatch")
+            if status == 1 {
+                print("Successfully login")
+                // Go to home page // Here homeVC is the storyboard viewcontroller id
+                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
+                present(homeVC!, animated: true, completion: nil)
+                
+                //            dismiss(animated: false, completion: nil)
+            } else {
+                print("Credential mismatch")
+            }
         }
+        
+        
+        
     }
     
 
