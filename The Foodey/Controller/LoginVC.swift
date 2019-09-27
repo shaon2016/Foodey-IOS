@@ -65,9 +65,9 @@ class LoginVC: UIViewController {
             if status == 1 {
                 print("Successfully login")
                 // Go to home page // Here homeVC is the storyboard viewcontroller id
-                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
-                present(homeVC!, animated: true, completion: nil)
-                
+//                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
+//                present(homeVC!, animated: true, completion: nil)
+                performSegue(withIdentifier: "goToHome", sender: nil)
                 //            dismiss(animated: false, completion: nil)
             } else {
                 print("Credential mismatch")

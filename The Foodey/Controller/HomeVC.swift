@@ -8,10 +8,11 @@
 
 import UIKit
 
-class HomeVC: UITableViewController, updateFoodTableViewDelegate{
+class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, updateFoodTableViewDelegate{
     
    
-
+    @IBOutlet weak var foodTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,18 +27,20 @@ class HomeVC: UITableViewController, updateFoodTableViewDelegate{
     }
     
     func initView() {
+        foodTable.delegate = self
+        foodTable.dataSource = self
+
         DataService.instance.foodTableViewReloadDelegate = self
        
         DataService.instance.loadFoods()
-    
     }
     
     // MARK: TableView delegate and datasource
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getFoods().count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as? FoodCell {
             let food = DataService.instance.getFoods()[indexPath.row]
             cell.updateViews(f: food)
@@ -49,13 +52,14 @@ class HomeVC: UITableViewController, updateFoodTableViewDelegate{
         }
     }
     
-
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 230
     }
+  
     
     func foodFromServerLoadDone() {
-       tableView.reloadData()
+      foodTable.reloadData()
     }
 
 }
