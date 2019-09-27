@@ -18,7 +18,7 @@ class DataService {
    
     
     func getFoods() -> [Food] {
-       foods.append(Food(id: 0, name: "String", price: "String", image: "String", description: "String"))
+       
         return foods
     }
     
