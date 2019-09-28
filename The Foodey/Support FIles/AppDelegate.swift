@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        if MyUserDefault().isLoggedIn() {
+            let nav = storyboard.instantiateViewController(withIdentifier: "homeVC")
+            self.window?.rootViewController = nav
+        } else {
+            let nav = storyboard.instantiateViewController(withIdentifier: "loginVC")
+            self.window?.rootViewController = nav
+        }
+        
+        
+        
         return true
     }
 

@@ -54,7 +54,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, upda
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 230
+        return 190
     }
   
     
