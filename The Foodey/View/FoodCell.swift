@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FoodCell: UITableViewCell {
     
@@ -18,5 +19,6 @@ class FoodCell: UITableViewCell {
     func updateViews(f : Food) {
         nameLabel.text = f.name
         priceLabel.text = f.price
+        ivFood.sd_setImage(with: URL(string: f.image), placeholderImage: UIImage(named: "beats"))
     }
 }
