@@ -351,13 +351,67 @@
                     <view key="view" contentMode="scaleToFill" id="iAb-zO-Ikj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-60-efe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="18U-sK-rzg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fajita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySw-qp-Ykx">
+                                <rect key="frame" x="20" y="252" width="374" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price 1800 BDT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xT-oZ-RG6">
+                                <rect key="frame" x="20" y="286.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgn-3h-M7H">
+                                <rect key="frame" x="20" y="332.5" width="129" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nA-8z-VXC">
+                                <rect key="frame" x="20" y="381.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GIY-60-efe" firstAttribute="top" secondItem="Hzj-op-8Bf" secondAttribute="top" id="02W-1Y-Xhs"/>
+                            <constraint firstItem="Hzj-op-8Bf" firstAttribute="trailing" secondItem="8xT-oZ-RG6" secondAttribute="trailing" constant="20" id="2tT-cv-ocE"/>
+                            <constraint firstItem="0nA-8z-VXC" firstAttribute="leading" secondItem="Hzj-op-8Bf" secondAttribute="leading" constant="20" id="3C0-Ho-NyV"/>
+                            <constraint firstItem="8xT-oZ-RG6" firstAttribute="leading" secondItem="Hzj-op-8Bf" secondAttribute="leading" constant="20" id="61n-ZN-UbO"/>
+                            <constraint firstItem="wgn-3h-M7H" firstAttribute="top" secondItem="8xT-oZ-RG6" secondAttribute="bottom" constant="25" id="6Ci-Zo-cIW"/>
+                            <constraint firstItem="0nA-8z-VXC" firstAttribute="top" secondItem="wgn-3h-M7H" secondAttribute="bottom" constant="16" id="6ZK-pG-Bzy"/>
+                            <constraint firstItem="Hzj-op-8Bf" firstAttribute="trailing" secondItem="0nA-8z-VXC" secondAttribute="trailing" constant="20" id="9y2-ha-rk5"/>
+                            <constraint firstItem="8xT-oZ-RG6" firstAttribute="top" secondItem="ySw-qp-Ykx" secondAttribute="bottom" constant="4" id="Ic4-3g-Cpm"/>
+                            <constraint firstItem="ySw-qp-Ykx" firstAttribute="top" secondItem="GIY-60-efe" secondAttribute="bottom" constant="8" id="LYK-4P-VJI"/>
+                            <constraint firstItem="ySw-qp-Ykx" firstAttribute="leading" secondItem="Hzj-op-8Bf" secondAttribute="leading" constant="20" id="MpQ-oO-RD5"/>
+                            <constraint firstItem="Hzj-op-8Bf" firstAttribute="trailing" secondItem="ySw-qp-Ykx" secondAttribute="trailing" constant="20" id="atf-9c-aUv"/>
+                            <constraint firstItem="GIY-60-efe" firstAttribute="leading" secondItem="Hzj-op-8Bf" secondAttribute="leading" id="hNy-6N-2AB"/>
+                            <constraint firstItem="GIY-60-efe" firstAttribute="trailing" secondItem="Hzj-op-8Bf" secondAttribute="trailing" id="m9l-tp-6IM"/>
+                            <constraint firstItem="wgn-3h-M7H" firstAttribute="leading" secondItem="Hzj-op-8Bf" secondAttribute="leading" constant="20" id="pOf-eE-vPi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hzj-op-8Bf"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="0nA-8z-VXC" id="1P1-N3-7qi"/>
+                        <outlet property="ivFood" destination="GIY-60-efe" id="eZo-Zz-oxg"/>
+                        <outlet property="nameLabel" destination="ySw-qp-Ykx" id="QRO-qk-Rdr"/>
+                        <outlet property="priceLabel" destination="8xT-oZ-RG6" id="vNl-Ar-Df4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kx-NU-0e3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-816"/>
+            <point key="canvasLocation" x="934.78260869565224" y="-816.29464285714278"/>
         </scene>
     </scenes>
     <resources>

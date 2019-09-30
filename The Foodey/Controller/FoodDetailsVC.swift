@@ -9,22 +9,27 @@
 import UIKit
 
 class FoodDetailsVC: UIViewController {
-
+    @IBOutlet weak var ivFood: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    private var f : Food?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLabel.text = f?.name
+        priceLabel.text = f?.price
+        descriptionLabel.text = f?.description
+        ivFood.sd_setImage(with: URL(string: f?.image ?? ""), placeholderImage: UIImage(named: "beats"))
     }
     
+    
+    func initFood(food : Food)  {
+        f = food
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
 
 }

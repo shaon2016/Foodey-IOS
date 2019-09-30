@@ -57,6 +57,17 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, upda
         return 190
     }
   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let food = DataService.instance.getFoods()[indexPath.row]
+        performSegue(withIdentifier: "goToFoodDetails", sender: food)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let foodDetailsVC = segue.destination as? FoodDetailsVC {
+            foodDetailsVC.initFood(food: sender as! Food)
+        }
+    }
+    
     
     func foodFromServerLoadDone() {
       foodTable.reloadData()
