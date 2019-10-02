@@ -22,12 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    
     func setRootVC()
     {
         if MyUserDefault().isLoggedIn() {
-            let nav = UIStoryboard.storyboard(storyboard: .Main, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+            updateNavigationBarAppearance()
             
-            window?.rootViewController = nav
+            let vc = UIStoryboard.storyboard(storyboard: .Main, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+            
+            let navigationController = UINavigationController(rootViewController: vc)
+            
+            window?.rootViewController = navigationController
+            
+            //window?.makeKeyAndVisible()
         } else {
             let nav = UIStoryboard.storyboard(storyboard: .Auth, bundle: nil).instantiateViewController(withIdentifier: "loginVC")
             
@@ -35,6 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func updateNavigationBarAppearance(){
+        UINavigationBar.appearance().barTintColor = UIColor.red
+        // Change the bar item color or bar item text color
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -59,5 +72,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    
 }
 
