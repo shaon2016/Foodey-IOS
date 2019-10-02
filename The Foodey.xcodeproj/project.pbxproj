@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */; };
 		CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D1EE23389B2A0070E843 /* Constant.swift */; };
+		CE5FC7412344E6510085B882 /* StoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7402344E6510085B882 /* StoryboardExt.swift */; };
+		CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7422344EC9C0085B882 /* VCExt.swift */; };
+		CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6F3CF023435C69001C0599 /* Auth.storyboard */; };
 		CE9EC841233F38AF00FF25D6 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */; };
 		CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC843233F557200FF25D6 /* MyUserDefault.swift */; };
 		CE9EC846233F565D00FF25D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC845233F565D00FF25D6 /* User.swift */; };
@@ -28,6 +31,9 @@
 		0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Foodey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.release.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.release.xcconfig"; sourceTree = "<group>"; };
 		CE50D1EE23389B2A0070E843 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CE5FC7402344E6510085B882 /* StoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExt.swift; sourceTree = "<group>"; };
+		CE5FC7422344EC9C0085B882 /* VCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExt.swift; sourceTree = "<group>"; };
+		CE6F3CF023435C69001C0599 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		CE9EC843233F557200FF25D6 /* MyUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefault.swift; sourceTree = "<group>"; };
 		CE9EC845233F565D00FF25D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				CE50D1EE23389B2A0070E843 /* Constant.swift */,
+				CE5FC7402344E6510085B882 /* StoryboardExt.swift */,
+				CE5FC7422344EC9C0085B882 /* VCExt.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 			children = (
 				CEE9BA5923326B84000FAC42 /* Main.storyboard */,
 				CEDC813A23393EF3009C858F /* FoodCell.swift */,
+				CE6F3CF023435C69001C0599 /* Auth.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */,
 				CEE9BA6023326B85000FAC42 /* LaunchScreen.storyboard in Resources */,
 				CEE9BA5D23326B85000FAC42 /* Assets.xcassets in Resources */,
 				CEE9BA5B23326B84000FAC42 /* Main.storyboard in Resources */,
@@ -278,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5FC7412344E6510085B882 /* StoryboardExt.swift in Sources */,
 				CEE9BA6B23327E75000FAC42 /* RegisterVC.swift in Sources */,
 				CEDC81372338E870009C858F /* HomeVC.swift in Sources */,
 				CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */,
@@ -289,6 +300,7 @@
 				CEDC813923390B44009C858F /* Food.swift in Sources */,
 				CEE6E739233BF48C0051840A /* DataService.swift in Sources */,
 				CE9EC846233F565D00FF25D6 /* User.swift in Sources */,
+				CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

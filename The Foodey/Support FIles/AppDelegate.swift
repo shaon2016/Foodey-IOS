@@ -18,19 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        if MyUserDefault().isLoggedIn() {
-            let nav = storyboard.instantiateViewController(withIdentifier: "homeVC")
-            self.window?.rootViewController = nav
-        } else {
-            let nav = storyboard.instantiateViewController(withIdentifier: "loginVC")
-            self.window?.rootViewController = nav
-        }
-        
-        
-        
+        setRootVC()
         return true
     }
+    
+    func setRootVC()
+    {
+        if MyUserDefault().isLoggedIn() {
+            let nav = UIStoryboard.storyboard(storyboard: .Main, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+            
+            window?.rootViewController = nav
+        } else {
+            let nav = UIStoryboard.storyboard(storyboard: .Auth, bundle: nil).instantiateViewController(withIdentifier: "loginVC")
+            
+            window?.rootViewController = nav
+        }
+    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

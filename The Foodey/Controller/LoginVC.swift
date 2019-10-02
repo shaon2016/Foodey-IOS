@@ -29,12 +29,7 @@ class LoginVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if MyUserDefault().isLoggedIn() {
-            // Go to home page // Here homeVC is the storyboard viewcontroller id
-            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
-            present(homeVC!, animated: true, completion: nil)
-        }
-        navigationController?.setNavigationBarHidden(true, animated: false)
+//        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     
@@ -73,13 +68,8 @@ class LoginVC: UIViewController {
             if status == 1 {
                 let data = loginJSON["data"]
                 MyUserDefault().saveLoginResponse(data: data)
-                performSegue(withIdentifier: "goToHome", sender: nil)
-                
-                // Go to home page // Here homeVC is the storyboard viewcontroller id
-                //                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
-                //                present(homeVC!, animated: true, completion: nil)
-                
-                //            dismiss(animated: false, completion: nil)
+              
+                goToRoot()
             } else {
                 print("Credential mismatch")
             }
