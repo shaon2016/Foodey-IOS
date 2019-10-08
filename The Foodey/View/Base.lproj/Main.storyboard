@@ -78,7 +78,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pqm-aW-8lC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="4fX-rv-M1c"/>
+                    <navigationItem key="navigationItem" title="Home" id="4fX-rv-M1c">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" image="cart" id="spZ-Ku-cUJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Biz-Ve-NpY" kind="show" id="YEh-DH-qnV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="foodTable" destination="zJH-hV-btE" id="7v1-xc-zhd"/>
                         <segue destination="exw-d7-9w5" kind="show" identifier="goToFoodDetails" id="Nhw-Pl-OkF"/>
@@ -88,7 +95,15 @@
             </objects>
             <point key="canvasLocation" x="2336.8000000000002" y="-809.14542728635683"/>
         </scene>
-        <!--Food DetailsVC-->
+        <!--Cart-->
+        <scene sceneID="lmA-Nv-Yya">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" id="Biz-Ve-NpY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYR-CR-yUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2898" y="-1387"/>
+        </scene>
+        <!--Details-->
         <scene sceneID="lBU-Gs-Hjj">
             <objects>
                 <viewController id="exw-d7-9w5" customClass="FoodDetailsVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
@@ -175,6 +190,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R2h-hQ-ZGX"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Details" id="dsw-CN-pQh">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" image="cart" id="Nj3-yH-VSo">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Biz-Ve-NpY" kind="show" id="0os-U3-v9J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="62p-Ni-Puf" id="wba-2k-hLy"/>
@@ -190,26 +213,31 @@
         <!--Home-->
         <scene sceneID="tsW-AJ-7Wt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nOe-Kk-oCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="homeVC" automaticallyAdjustsScrollViewInsets="NO" id="c1d-vA-WzB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="icons8-home-50" id="hAf-ay-0vc"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="hAf-ay-0vc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fSI-Sk-t7p">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.46291255739999998" blue="0.43480535549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="LxW-Dj-Jz5" kind="relationship" relationship="rootViewController" id="44B-he-Z88"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOe-Kk-oCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="-809.14542728635683"/>
         </scene>
     </scenes>
     <resources>
         <image name="beats" width="800" height="800"/>
-        <image name="icons8-home-50" width="12.5" height="12.5"/>
+        <image name="cart" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0os-U3-v9J"/>
+    </inferredMetricsTieBreakers>
 </document>

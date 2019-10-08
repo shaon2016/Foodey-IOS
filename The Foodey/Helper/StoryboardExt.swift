@@ -12,6 +12,8 @@ extension UIStoryboard {
     enum Storyboard : String {
         case Nav
         case Auth
+        case Main
+        case Cart
     }
     
     class func storyboard(storyboard: Storyboard, bundle: Bundle? = nil) -> UIStoryboard {
