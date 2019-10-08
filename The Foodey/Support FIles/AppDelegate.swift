@@ -28,11 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if MyUserDefault().isLoggedIn() {
             updateNavigationBarAppearance()
             
-            let vc = UIStoryboard.storyboard(storyboard: .Main, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+            let vc = UIStoryboard.storyboard(storyboard: .Nav, bundle: nil).instantiateViewController(withIdentifier: "navVC")
             
-            let navigationController = UINavigationController(rootViewController: vc)
-            
-            window?.rootViewController = navigationController
+//            let navigationController = UINavigationController(rootViewController: vc)
+//
+            window?.rootViewController = vc
             
             //window?.makeKeyAndVisible()
         } else {
@@ -47,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Change the bar item color or bar item text color
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        
+//        UITabBar.appearance().tintColor = UIColor.white
+//        UITabBar.appearance().barTintColor = UIColor.lightGray
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

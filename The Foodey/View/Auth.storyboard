@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login-->
+        <!--LoginVC-->
         <scene sceneID="txj-9Y-0XL">
             <objects>
                 <viewController storyboardIdentifier="loginVC" id="IBQ-bB-RAb" customClass="LoginVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZSD-43-9O2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="dQ3-Vj-eYb"/>
                     <connections>
                         <outlet property="mobileTF" destination="DKi-GE-SAo" id="w9g-0f-nlX"/>
                         <outlet property="passwordTF" destination="cvM-5E-4ZB" id="yTE-Wt-I1U"/>
@@ -117,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="-539" y="-819"/>
         </scene>
-        <!--Registration-->
+        <!--RegisterVC-->
         <scene sceneID="IRH-Gk-Ubu">
             <objects>
                 <viewController storyboardIdentifier="signupVC" id="qfL-oH-gMP" customClass="RegisterVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,7 +227,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3if-1H-fDd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Registration" id="fF1-JC-ucY"/>
                     <connections>
                         <outlet property="mobileTF" destination="7bk-1p-EHf" id="Ipc-a9-rj9"/>
                         <outlet property="nameTF" destination="uC6-03-EQF" id="7Vi-Ur-w7I"/>

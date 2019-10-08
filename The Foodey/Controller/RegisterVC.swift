@@ -61,7 +61,7 @@ class RegisterVC: UIViewController {
             // Go to home page // Here homeVC is the storyboard viewcontroller id
 //            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "homeVC")
 //            present(homeVC!, animated: true, completion: nil)
-            UIStoryboard.storyboard(storyboard: .Main, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+            UIStoryboard.storyboard(storyboard: .Nav, bundle: nil).instantiateViewController(withIdentifier: "homeVC")
             //            dismiss(animated: false, completion: nil)
         } else {
             print(message!)

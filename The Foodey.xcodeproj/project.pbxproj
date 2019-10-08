@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */; };
 		CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50D1EE23389B2A0070E843 /* Constant.swift */; };
+		CE532419234C8F3F00624BE9 /* Nav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE532418234C8F3F00624BE9 /* Nav.storyboard */; };
 		CE5FC7412344E6510085B882 /* StoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7402344E6510085B882 /* StoryboardExt.swift */; };
 		CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7422344EC9C0085B882 /* VCExt.swift */; };
 		CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6F3CF023435C69001C0599 /* Auth.storyboard */; };
@@ -31,6 +32,7 @@
 		0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Foodey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.release.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.release.xcconfig"; sourceTree = "<group>"; };
 		CE50D1EE23389B2A0070E843 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CE532418234C8F3F00624BE9 /* Nav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nav.storyboard; sourceTree = "<group>"; };
 		CE5FC7402344E6510085B882 /* StoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExt.swift; sourceTree = "<group>"; };
 		CE5FC7422344EC9C0085B882 /* VCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExt.swift; sourceTree = "<group>"; };
 		CE6F3CF023435C69001C0599 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				CEE9BA5923326B84000FAC42 /* Main.storyboard */,
 				CEDC813A23393EF3009C858F /* FoodCell.swift */,
 				CE6F3CF023435C69001C0599 /* Auth.storyboard */,
+				CE532418234C8F3F00624BE9 /* Nav.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */,
 				CEE9BA6023326B85000FAC42 /* LaunchScreen.storyboard in Resources */,
 				CEE9BA5D23326B85000FAC42 /* Assets.xcassets in Resources */,
+				CE532419234C8F3F00624BE9 /* Nav.storyboard in Resources */,
 				CEE9BA5B23326B84000FAC42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
