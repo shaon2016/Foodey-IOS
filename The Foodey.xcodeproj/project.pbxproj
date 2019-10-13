@@ -18,6 +18,7 @@
 		CE9EC841233F38AF00FF25D6 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */; };
 		CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC843233F557200FF25D6 /* MyUserDefault.swift */; };
 		CE9EC846233F565D00FF25D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC845233F565D00FF25D6 /* User.swift */; };
+		CEC13BFB2353198600CF5937 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC13BF92353198600CF5937 /* DataModel.xcdatamodeld */; };
 		CEDC81372338E870009C858F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC81362338E870009C858F /* HomeVC.swift */; };
 		CEDC813923390B44009C858F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813823390B44009C858F /* Food.swift */; };
 		CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813A23393EF3009C858F /* FoodCell.swift */; };
@@ -43,6 +44,7 @@
 		CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		CE9EC843233F557200FF25D6 /* MyUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefault.swift; sourceTree = "<group>"; };
 		CE9EC845233F565D00FF25D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEC13BFA2353198600CF5937 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		CEDC81362338E870009C858F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CEDC813823390B44009C858F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CEDC813A23393EF3009C858F /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				CEDC813823390B44009C858F /* Food.swift */,
 				CE9EC845233F565D00FF25D6 /* User.swift */,
+				CEC13BF92353198600CF5937 /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				CE5FC7412344E6510085B882 /* StoryboardExt.swift in Sources */,
 				CEE9BA6B23327E75000FAC42 /* RegisterVC.swift in Sources */,
 				CEDC81372338E870009C858F /* HomeVC.swift in Sources */,
+				CEC13BFB2353198600CF5937 /* DataModel.xcdatamodeld in Sources */,
 				CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */,
 				CE50D1EF23389B2A0070E843 /* Constant.swift in Sources */,
 				CEE9BA5823326B84000FAC42 /* LoginVC.swift in Sources */,
@@ -514,6 +518,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEC13BF92353198600CF5937 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEC13BFA2353198600CF5937 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = CEC13BFA2353198600CF5937 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEE9BA4A23326B84000FAC42 /* Project object */;
 }

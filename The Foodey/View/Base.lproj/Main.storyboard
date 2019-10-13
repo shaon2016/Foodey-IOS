@@ -112,10 +112,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVb-ej-A1f">
-                                <rect key="frame" x="0.0" y="64" width="375" height="887"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="845"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-XS-RFE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1169"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-Ma-Sp1">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -152,8 +152,8 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="s4j-Ak-iU8" firstAttribute="width" secondItem="KxK-5M-RBV" secondAttribute="width" id="6D6-m3-syY"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="62p-Ni-Puf" secondAttribute="bottom" constant="289" id="7PC-u1-W3e"/>
                                             <constraint firstItem="WyO-1x-igy" firstAttribute="top" secondItem="s4j-Ak-iU8" secondAttribute="bottom" constant="20" id="AK0-QM-ZGC"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="62p-Ni-Puf" secondAttribute="bottom" constant="16" id="Bcl-lr-fH0"/>
                                             <constraint firstItem="uHa-Ma-Sp1" firstAttribute="leading" secondItem="jVm-XS-RFE" secondAttribute="leading" id="CGL-2o-LMc"/>
                                             <constraint firstItem="62p-Ni-Puf" firstAttribute="leading" secondItem="jVm-XS-RFE" secondAttribute="leading" constant="20" id="SFe-6o-Gnl"/>
                                             <constraint firstItem="WyO-1x-igy" firstAttribute="leading" secondItem="jVm-XS-RFE" secondAttribute="leading" constant="20" id="UFU-ZP-O6d"/>
@@ -178,14 +178,29 @@
                                     <constraint firstItem="jVm-XS-RFE" firstAttribute="leading" secondItem="dVb-ej-A1f" secondAttribute="leading" id="dZA-ey-biS"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-lb-jxJ">
+                                <rect key="frame" x="0.0" y="909" width="375" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.03624573524" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="GKB-B1-3qM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add to Cart">
+                                    <color key="titleShadowColor" red="0.81410571220000005" green="0.36729325149999997" blue="0.20459091330000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="R2h-hQ-ZGX" firstAttribute="top" secondItem="dVb-ej-A1f" secondAttribute="top" id="EJE-FO-Bsh"/>
                             <constraint firstItem="jVm-XS-RFE" firstAttribute="height" secondItem="hQ8-Ja-J5j" secondAttribute="height" priority="250" id="I23-1d-HdN"/>
-                            <constraint firstItem="R2h-hQ-ZGX" firstAttribute="bottom" secondItem="dVb-ej-A1f" secondAttribute="bottom" id="LYx-FT-5kr"/>
+                            <constraint firstItem="Ssf-lb-jxJ" firstAttribute="leading" secondItem="R2h-hQ-ZGX" secondAttribute="leading" id="P96-ss-QS3"/>
                             <constraint firstItem="dVb-ej-A1f" firstAttribute="leading" secondItem="R2h-hQ-ZGX" secondAttribute="leading" id="Y9P-Vl-nPm"/>
+                            <constraint firstItem="Ssf-lb-jxJ" firstAttribute="top" secondItem="dVb-ej-A1f" secondAttribute="bottom" id="gg2-eH-uHX"/>
                             <constraint firstItem="R2h-hQ-ZGX" firstAttribute="trailing" secondItem="dVb-ej-A1f" secondAttribute="trailing" id="hve-Y9-NFS"/>
+                            <constraint firstItem="R2h-hQ-ZGX" firstAttribute="bottom" secondItem="Ssf-lb-jxJ" secondAttribute="bottom" id="j0x-Tv-IrX"/>
+                            <constraint firstItem="Ssf-lb-jxJ" firstAttribute="trailing" secondItem="R2h-hQ-ZGX" secondAttribute="trailing" id="mRo-Gp-5Ya"/>
                             <constraint firstItem="jVm-XS-RFE" firstAttribute="width" secondItem="hQ8-Ja-J5j" secondAttribute="width" id="oqq-ZV-DWH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R2h-hQ-ZGX"/>
