@@ -11,7 +11,7 @@ import Foundation
 struct Food {
     var id : Int
     var name : String
-    var price : String
+    var price : Double
     var image : String
     var description : String
     

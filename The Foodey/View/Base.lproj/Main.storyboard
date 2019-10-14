@@ -115,7 +115,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="845"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-XS-RFE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-Ma-Sp1">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -130,19 +130,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price 1800 BDT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Ak-iU8">
-                                                <rect key="frame" x="20" y="262.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="250.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-1x-igy">
-                                                <rect key="frame" x="20" y="303.5" width="129" height="33"/>
+                                                <rect key="frame" x="20" y="291.5" width="129" height="33"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="500" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62p-Ni-Puf">
-                                                <rect key="frame" x="20" y="352.5" width="335" height="20.5"/>
+                                                <rect key="frame" x="20" y="332.5" width="335" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -157,8 +157,8 @@
                                             <constraint firstItem="WyO-1x-igy" firstAttribute="leading" secondItem="jVm-XS-RFE" secondAttribute="leading" constant="20" id="UFU-ZP-O6d"/>
                                             <constraint firstAttribute="bottom" secondItem="62p-Ni-Puf" secondAttribute="bottom" constant="16" id="Vsm-WH-CCU"/>
                                             <constraint firstAttribute="trailing" secondItem="62p-Ni-Puf" secondAttribute="trailing" constant="20" id="XfR-wK-yWi"/>
-                                            <constraint firstItem="62p-Ni-Puf" firstAttribute="top" secondItem="WyO-1x-igy" secondAttribute="bottom" constant="16" id="YA8-Ji-pAX"/>
-                                            <constraint firstItem="s4j-Ak-iU8" firstAttribute="top" secondItem="KxK-5M-RBV" secondAttribute="bottom" constant="16" id="ZIx-lv-Wa2"/>
+                                            <constraint firstItem="62p-Ni-Puf" firstAttribute="top" secondItem="WyO-1x-igy" secondAttribute="bottom" constant="8" id="YA8-Ji-pAX"/>
+                                            <constraint firstItem="s4j-Ak-iU8" firstAttribute="top" secondItem="KxK-5M-RBV" secondAttribute="bottom" constant="4" id="ZIx-lv-Wa2"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WyO-1x-igy" secondAttribute="trailing" constant="20" symbolic="YES" id="a1H-ab-7ag"/>
                                             <constraint firstItem="KxK-5M-RBV" firstAttribute="leading" secondItem="jVm-XS-RFE" secondAttribute="leading" constant="20" id="aOi-Yl-6gL"/>
                                             <constraint firstAttribute="trailing" secondItem="uHa-Ma-Sp1" secondAttribute="trailing" id="f9D-IG-2i6"/>
@@ -188,6 +188,9 @@
                                 <state key="normal" title="Add to Cart">
                                     <color key="titleShadowColor" red="0.81410571220000005" green="0.36729325149999997" blue="0.20459091330000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToCartBtnTapped:" destination="exw-d7-9w5" eventType="touchUpInside" id="r9l-E0-tJO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

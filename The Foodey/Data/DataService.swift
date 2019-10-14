@@ -36,10 +36,10 @@ class DataService {
                                 let id = data[i]["id"].int
                                 let name = data[i]["name"].string
                                 let image = data[i]["image"].string
-                                let price = data[i]["price"].string
+                                let price = data[i]["price"].doubleValue
                                 let desc = data[i]["description"].string
                                 
-                                let f = Food(id: id ?? 0, name: name ?? "", price: price ?? "", image: image ?? "", description: desc ?? "")
+                                let f = Food(id: id ?? 0, name: name ?? "", price: price, image: image ?? "", description: desc ?? "")
                                 self.foods.append(f)
                                 print(f)
                                 
