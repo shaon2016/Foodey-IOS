@@ -21,7 +21,7 @@ class FoodDetailsVC: UIViewController {
 
         nameLabel.text = f?.name
         priceLabel.text = f?.price
-        //descriptionLabel.text = f?.description
+        descriptionLabel.text = f?.description
         ivFood.sd_setImage(with: URL(string: f?.image ?? ""), placeholderImage: UIImage(named: "beats"))
     }
     
