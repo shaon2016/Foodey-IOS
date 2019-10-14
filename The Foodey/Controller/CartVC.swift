@@ -13,21 +13,22 @@ class CartVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "CartTableViewCell", bundle: nil), forCellReuseIdentifier: "cartTableViewCell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath) as? FoodCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cartTableViewCell", for: indexPath) as? CartTableViewCell {
             
             return cell
         }
         
-        return FoodCell()
+        return CartTableViewCell()
     }
 
 
