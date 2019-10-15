@@ -33,7 +33,7 @@ class DataService {
                     if success == 1 {
                         if let data = foodJson["data"].array {
                             for i in data.indices {
-                                let id = data[i]["id"].int
+                                let id = data[i]["id"].intValue
                                 let name = data[i]["name"].string
                                 let image = data[i]["image"].string
                                 let price = data[i]["price"].doubleValue

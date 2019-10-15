@@ -35,21 +35,7 @@ class FoodDetailsVC: UIViewController {
     }
     
     @IBAction func addToCartBtnTapped(_ sender: Any) {
-        let cart = Cart(context: context)
-        
-        if let food = f  {
-            // Check food already exists or not
-            if let cart = CartDataService.instance.getCart(foodId: food.id) {
-                cart.quantity += 1
-            } else {
-                cart.food_id = Int64(food.id)
-                cart.food_name = food.name
-                cart.food_price = food.price
-                cart.quantity = 1
-            }
-          // Saving or updating database
-            CartDataService.instance.saveItem()
-        }
+       CartDataService.instance.insert(f: f)
     }
     
     // MARK: Data Model manipulation methods

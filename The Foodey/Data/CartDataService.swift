@@ -26,6 +26,23 @@ class CartDataService {
         }
     }
     
+    func insert(f : Food?)  {
+        if let food = f  {
+            // Check food already exists or not
+            if let cart = getCart(foodId: food.id) {
+                cart.quantity += 1
+            } else {
+                let cart = Cart(context: context)
+                cart.food_id = Int64(food.id)
+                cart.food_name = food.name
+                cart.food_price = food.price
+                cart.quantity = 1
+            }
+            
+            saveItem()
+        }
+    }
+    
     func saveItem()  {
         do {
             try context.save()
@@ -36,7 +53,8 @@ class CartDataService {
     
     func getCart(foodId id : Int) -> Cart? {
         let request : NSFetchRequest<Cart> = Cart.fetchRequest()
-        let predicate = NSPredicate (format: "food_id == %@", id)
+        
+        let predicate = NSPredicate(format: "food_id == %i", id)
         
         request.predicate = predicate
         
