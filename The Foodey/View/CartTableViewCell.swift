@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CartTableViewCell: UITableViewCell {
 
@@ -18,6 +19,13 @@ class CartTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
        
+    }
+    
+    func updateView(cart : Cart) {
+        nameLabel.text = cart.food_name
+        priceLabel.text = String(cart.food_price)
+        quantityLabel.text = String(cart.quantity)
+        foodImage.sd_setImage(with: URL(string: cart.food_image ?? ""), placeholderImage: UIImage(named: "beats"))
     }
 
     

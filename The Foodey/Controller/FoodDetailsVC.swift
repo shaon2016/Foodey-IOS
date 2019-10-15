@@ -39,7 +39,7 @@ class FoodDetailsVC: UIViewController {
         
         if let food = f  {
             // Check food already exists or not
-            if let cart = getCart(foodId: food.id) {
+            if let cart = CartDataService.instance.getCart(foodId: food.id) {
                 cart.quantity += 1
             } else {
                 cart.food_id = Int64(food.id)
@@ -48,31 +48,11 @@ class FoodDetailsVC: UIViewController {
                 cart.quantity = 1
             }
           // Saving or updating database
-            saveItem()
+            CartDataService.instance.saveItem()
         }
     }
     
     // MARK: Data Model manipulation methods
     
-    func saveItem()  {
-        do {
-            try context.save()
-        } catch {
-            print("Error in Item save \(error)")
-        }
-    }
     
-    func getCart(foodId id : Int) -> Cart? {
-        let request : NSFetchRequest<Cart> = Cart.fetchRequest()
-        let predicate = NSPredicate (format: "food_id == %@", id)
-        
-        request.predicate = predicate
-        
-        do {
-            return try context.fetch(request).first
-        } catch{
-            print("Error in Fetching Item data: \(error)")
-            return nil
-        }
-    }
 }

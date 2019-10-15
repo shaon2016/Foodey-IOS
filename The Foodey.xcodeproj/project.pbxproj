@@ -18,6 +18,7 @@
 		CE5FC7412344E6510085B882 /* StoryboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7402344E6510085B882 /* StoryboardExt.swift */; };
 		CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FC7422344EC9C0085B882 /* VCExt.swift */; };
 		CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6F3CF023435C69001C0599 /* Auth.storyboard */; };
+		CE9E948B23563CD5004B2BDD /* CartDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E948A23563CD5004B2BDD /* CartDataService.swift */; };
 		CE9EC841233F38AF00FF25D6 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */; };
 		CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC843233F557200FF25D6 /* MyUserDefault.swift */; };
 		CE9EC846233F565D00FF25D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC845233F565D00FF25D6 /* User.swift */; };
@@ -47,6 +48,7 @@
 		CE5FC7402344E6510085B882 /* StoryboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExt.swift; sourceTree = "<group>"; };
 		CE5FC7422344EC9C0085B882 /* VCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExt.swift; sourceTree = "<group>"; };
 		CE6F3CF023435C69001C0599 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CE9E948A23563CD5004B2BDD /* CartDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataService.swift; sourceTree = "<group>"; };
 		CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		CE9EC843233F557200FF25D6 /* MyUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefault.swift; sourceTree = "<group>"; };
 		CE9EC845233F565D00FF25D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				CEE6E738233BF48C0051840A /* DataService.swift */,
 				CE9EC843233F557200FF25D6 /* MyUserDefault.swift */,
+				CE9E948A23563CD5004B2BDD /* CartDataService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				CE169B792354EE5300055E9C /* CartVC.swift in Sources */,
 				CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */,
 				CE9EC841233F38AF00FF25D6 /* FoodDetailsVC.swift in Sources */,
+				CE9E948B23563CD5004B2BDD /* CartDataService.swift in Sources */,
 				CEDC813923390B44009C858F /* Food.swift in Sources */,
 				CEE6E739233BF48C0051840A /* DataService.swift in Sources */,
 				CE9EC846233F565D00FF25D6 /* User.swift in Sources */,

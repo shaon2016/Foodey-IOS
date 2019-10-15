@@ -10,6 +10,8 @@ import UIKit
 
 class CartVC: UITableViewController {
 
+    private let carts = CartDataService.instance.getCarts()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,13 +20,14 @@ class CartVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return carts?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cartTableViewCell", for: indexPath) as? CartTableViewCell {
-            
+            let cart = carts?[indexPath.row]
+            cell.updateView(cart: cart ?? Cart())
             return cell
         }
         
