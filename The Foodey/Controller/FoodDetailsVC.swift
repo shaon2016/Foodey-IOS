@@ -17,7 +17,6 @@ class FoodDetailsVC: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     // MARK: Instances
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private var f : Food?
     
     override func viewDidLoad() {
@@ -35,10 +34,41 @@ class FoodDetailsVC: UIViewController {
     }
     
     @IBAction func addToCartBtnTapped(_ sender: Any) {
-       CartDataService.instance.insert(f: f)
+       
+        insert()
+    }
+    
+   private func insert()  {
+        if let food = f  {
+            // Check food already exists or not
+            if let cart = getCart(foodId: food.id) {
+                cart.quantity += 1
+            } else {
+                let cart = Cart(context: PersistanceManager.pm.context)
+                cart.food_id = Int64(food.id)
+                cart.food_name = food.name
+                cart.food_price = food.price
+                cart.quantity = 1
+            }
+            
+            PersistanceManager.pm.saveContext()
+        }
     }
     
     // MARK: Data Model manipulation methods
-    
+    func getCart(foodId id : Int) -> Cart? {
+        let request : NSFetchRequest<Cart> = Cart.fetchRequest()
+        
+        let predicate = NSPredicate(format: "food_id == %i", id)
+        
+        request.predicate = predicate
+        
+        do {
+            return try PersistanceManager.pm.context.fetch(request).first
+        } catch{
+            print("Error in Fetching Item data: \(error)")
+            return nil
+        }
+    }
     
 }

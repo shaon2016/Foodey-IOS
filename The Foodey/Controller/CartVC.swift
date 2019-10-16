@@ -10,7 +10,7 @@ import UIKit
 
 class CartVC: UITableViewController {
 
-    private let carts = CartDataService.instance.getCarts()
+    private let carts = PersistanceManager.pm.fetch(objectType: Cart.self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +20,14 @@ class CartVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return carts?.count ?? 0
+        return carts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cartTableViewCell", for: indexPath) as? CartTableViewCell {
-            let cart = carts?[indexPath.row]
-            cell.updateView(cart: cart ?? Cart())
+            let cart = carts[indexPath.row]
+            cell.updateView(cart: cart )
             return cell
         }
         
