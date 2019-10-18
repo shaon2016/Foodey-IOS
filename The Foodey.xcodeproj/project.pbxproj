@@ -23,6 +23,8 @@
 		CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC843233F557200FF25D6 /* MyUserDefault.swift */; };
 		CE9EC846233F565D00FF25D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EC845233F565D00FF25D6 /* User.swift */; };
 		CEC13BFB2353198600CF5937 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC13BF92353198600CF5937 /* DataModel.xcdatamodeld */; };
+		CEDAF1A2235A5D9D00107FF9 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAF1A1235A5D9D00107FF9 /* CheckoutVC.swift */; };
+		CEDAF1A6235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAF1A5235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift */; };
 		CEDC81372338E870009C858F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC81362338E870009C858F /* HomeVC.swift */; };
 		CEDC813923390B44009C858F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813823390B44009C858F /* Food.swift */; };
 		CEDC813B23393EF3009C858F /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC813A23393EF3009C858F /* FoodCell.swift */; };
@@ -53,6 +55,8 @@
 		CE9EC843233F557200FF25D6 /* MyUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefault.swift; sourceTree = "<group>"; };
 		CE9EC845233F565D00FF25D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEC13BFA2353198600CF5937 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		CEDAF1A1235A5D9D00107FF9 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
+		CEDAF1A5235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutUICollectionViewCell.swift; sourceTree = "<group>"; };
 		CEDC81362338E870009C858F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CEDC813823390B44009C858F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CEDC813A23393EF3009C858F /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				CEDC81362338E870009C858F /* HomeVC.swift */,
 				CE9EC840233F38AF00FF25D6 /* FoodDetailsVC.swift */,
 				CE169B782354EE5300055E9C /* CartVC.swift */,
+				CEDAF1A1235A5D9D00107FF9 /* CheckoutVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				CE1BCD1C234CFEEB008911D0 /* Order.storyboard */,
 				CE169B7A2354F4C100055E9C /* CartTableViewCell.swift */,
 				CE169B7B2354F4C100055E9C /* CartTableViewCell.xib */,
+				CEDAF1A5235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,11 +334,13 @@
 				CE169B792354EE5300055E9C /* CartVC.swift in Sources */,
 				CE9EC844233F557200FF25D6 /* MyUserDefault.swift in Sources */,
 				CE9EC841233F38AF00FF25D6 /* FoodDetailsVC.swift in Sources */,
+				CEDAF1A2235A5D9D00107FF9 /* CheckoutVC.swift in Sources */,
 				CEDC813923390B44009C858F /* Food.swift in Sources */,
 				CEE6E739233BF48C0051840A /* DataService.swift in Sources */,
 				CE9EC846233F565D00FF25D6 /* User.swift in Sources */,
 				CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */,
 				CE169B7C2354F4C100055E9C /* CartTableViewCell.swift in Sources */,
+				CEDAF1A6235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

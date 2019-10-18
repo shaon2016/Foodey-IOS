@@ -22,7 +22,13 @@ class CartVC: UIViewController {
     }
     
     @IBAction func checkoutBtnTapped(_ sender: Any) {
-        
+        performSegue(withIdentifier: "goToCheckout", sender: carts)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? CheckoutVC {
+            destinationVC.initCarts(carts: carts)
+        }
     }
 }
 
