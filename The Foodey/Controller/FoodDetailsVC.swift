@@ -47,6 +47,7 @@ class FoodDetailsVC: UIViewController {
                 let cart = Cart(context: PersistanceManager.pm.context)
                 cart.food_id = Int64(food.id)
                 cart.food_name = food.name
+                cart.food_image = food.image
                 cart.food_price = food.price
                 cart.quantity = 1
             }

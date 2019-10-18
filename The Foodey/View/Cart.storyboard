@@ -1,41 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TH9-NC-2Ze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cDf-mM-XM3">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--CartVC-->
-        <scene sceneID="I6G-4Y-Dhe">
+        <scene sceneID="DU6-eR-z4y">
             <objects>
-                <tableViewController id="TH9-NC-2Ze" customClass="CartVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bNC-oV-8LC">
+                <viewController id="cDf-mM-XM3" customClass="CartVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mnA-Gk-Nu7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rGm-r7-iI3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="820"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FlW-Gs-G7z">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FlW-Gs-G7z" id="bub-FV-FAH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cDf-mM-XM3" id="ckI-fA-AQn"/>
+                                    <outlet property="delegate" destination="cDf-mM-XM3" id="jQE-gI-EPn"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-3T-I9j">
+                                <rect key="frame" x="0.0" y="820" width="414" height="42"/>
+                                <color key="backgroundColor" red="0.96147246340000003" green="0.4838793045" blue="0.32848203139999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="m26-Wz-50i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkoutBtnTapped:" destination="cDf-mM-XM3" eventType="touchUpInside" id="DIJ-jc-RZo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rgF-KX-FvI">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rgF-KX-FvI" id="4r9-d9-NPv">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="TH9-NC-2Ze" id="5WL-YN-Hl6"/>
-                            <outlet property="delegate" destination="TH9-NC-2Ze" id="UKM-aO-TZ2"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Deq-E6-ka6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="rGm-r7-iI3" firstAttribute="top" secondItem="mnA-Gk-Nu7" secondAttribute="top" id="0qp-c3-tVe"/>
+                            <constraint firstItem="rGm-r7-iI3" firstAttribute="trailing" secondItem="GR1-tT-1rw" secondAttribute="trailing" id="Y5Z-D5-b1b"/>
+                            <constraint firstItem="Hv2-3T-I9j" firstAttribute="bottom" secondItem="GR1-tT-1rw" secondAttribute="bottom" id="oTd-dY-Inl"/>
+                            <constraint firstItem="GR1-tT-1rw" firstAttribute="trailing" secondItem="Hv2-3T-I9j" secondAttribute="trailing" id="rWR-5V-l26"/>
+                            <constraint firstItem="Hv2-3T-I9j" firstAttribute="top" secondItem="rGm-r7-iI3" secondAttribute="bottom" id="ugf-kW-3QZ"/>
+                            <constraint firstItem="rGm-r7-iI3" firstAttribute="leading" secondItem="GR1-tT-1rw" secondAttribute="leading" id="xgG-Ws-ygP"/>
+                            <constraint firstItem="Hv2-3T-I9j" firstAttribute="leading" secondItem="GR1-tT-1rw" secondAttribute="leading" id="zR1-ch-3fr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GR1-tT-1rw"/>
+                    </view>
+                    <connections>
+                        <outlet property="cartTableView" destination="rGm-r7-iI3" id="ne3-cS-hVA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3X-wX-Arb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="-3"/>
+            <point key="canvasLocation" x="637.68115942028987" y="-3.3482142857142856"/>
         </scene>
     </scenes>
 </document>
