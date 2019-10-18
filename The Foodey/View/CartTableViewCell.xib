@@ -86,6 +86,8 @@
                 <outlet property="foodImage" destination="rzm-B1-LQL" id="RPr-tT-D1b"/>
                 <outlet property="nameLabel" destination="QlH-7t-dWC" id="bg8-PC-Af1"/>
                 <outlet property="priceLabel" destination="Wi1-Oe-AI8" id="ald-jt-14W"/>
+                <outlet property="quantityDecrementBtn" destination="oYM-bD-6wS" id="g7O-Le-ogv"/>
+                <outlet property="quantityIncrementBtn" destination="kQv-5J-mGg" id="pf3-sC-pdN"/>
                 <outlet property="quantityLabel" destination="nXW-KX-mTh" id="e6b-K6-Lgv"/>
             </connections>
             <point key="canvasLocation" x="63.768115942028992" y="87.388392857142847"/>

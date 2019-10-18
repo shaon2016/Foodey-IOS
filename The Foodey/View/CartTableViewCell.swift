@@ -16,9 +16,21 @@ class CartTableViewCell: UITableViewCell {
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var quantityLabel: UILabel!
     
+    @IBOutlet weak var quantityIncrementBtn: UIButton!
+    @IBOutlet weak var quantityDecrementBtn: UIButton!
+    // the delegate, remember to set to weak to prevent cycles
+   // weak var delegate : CartTableViewCellDelegate?
+    
+    // the closure, () -> () means take no input and return void (nothing)
+    // it is wrapped in another parentheses outside in order to make the closure optional
+    var quantityChangeButtonAction : ((_ isToIncrement : Bool) -> ())?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+     
+        quantityIncrementBtn.addTarget(self, action: #selector(quantityIncrementTapped(_:)), for: .touchUpInside)
+        quantityDecrementBtn.addTarget(self, action: #selector(quantityDecrementTapped(_:)), for: .touchUpInside)
     }
     
     func updateView(cart : Cart) {
@@ -29,9 +41,18 @@ class CartTableViewCell: UITableViewCell {
     }
 
     
-    @IBAction func quantityIncrementTapped(_ sender: Any) {
+    @IBAction func quantityIncrementTapped(_ sender: UIButton) {
+        quantityChangeButtonAction?(true)
+
     }
     
-    @IBAction func quantityDecrementTapped(_ sender: Any) {
+    @IBAction func quantityDecrementTapped(_ sender: UIButton) {
+        quantityChangeButtonAction?(false)
     }
 }
+
+//// Only class object can conform to this protocol (struct/enum can't)
+//protocol CartTableViewCellDelegate : AnyObject {
+//    // increment = true, decrement = false
+//    func cartTableViewCell(_ cartTVCell : CartTableViewCell, tappedFor isToIncrement : Bool)
+//}

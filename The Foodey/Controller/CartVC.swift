@@ -27,7 +27,21 @@ class CartVC: UITableViewController {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cartTableViewCell", for: indexPath) as? CartTableViewCell {
             let cart = carts[indexPath.row]
-            cell.updateView(cart: cart )
+            cell.updateView(cart: cart)
+            
+            // the code that will be executed when user tap on the button
+            // notice the capture block has [unowned self]
+            // the 'self' is the viewcontroller
+            cell.quantityChangeButtonAction = { [unowned self] isToIncrement in
+                if isToIncrement == true {
+                    cart.quantity += 1
+                }else {
+                    cart.quantity -= 1
+                }
+                cell.updateView(cart: cart)
+                PersistanceManager.pm.saveContext()
+            }
+            
             return cell
         }
         
@@ -36,3 +50,5 @@ class CartVC: UITableViewController {
 
 
 }
+
+
