@@ -31,11 +31,15 @@ struct MyUserDefault {
     }
     
     func isLoggedIn() -> Bool {
-        let id = myDefaults.integer(forKey: USER_ID_KEY)
+        let id = getUserId()
     
         if id > 0 {
             return true
         }
         return false
+    }
+    
+    func getUserId() -> Int {
+        return myDefaults.integer(forKey: USER_ID_KEY)
     }
 }
