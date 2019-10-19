@@ -10,6 +10,7 @@ import UIKit
 
 import SwiftyJSON
 import Alamofire
+import SVProgressHUD
 
 class LoginVC: UIViewController {
     private let loginURL = "login/views/login.php"
@@ -20,8 +21,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+     
     }
     
     
@@ -40,12 +40,14 @@ class LoginVC: UIViewController {
     
     //MARK: Networking
     func doLogin() {
+        
         if let mobile = mobileTF.text , let password = passwordTF.text, !mobile.isEmpty, !password.isEmpty {
             let url = "\(Constant.BASE_URL)\(loginURL)"
             let params = ["mobile" : mobile, "password" : password]
             
+            SVProgressHUD.show()
             Alamofire.request(url, method: .post, parameters : params).responseJSON { response in
-                
+                SVProgressHUD.dismiss()
                 if response.result.isSuccess {
                     let loginJSON = JSON(response.result.value!)
                     

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--OrdersVC-->
         <scene sceneID="emW-vb-1pa">
             <objects>
-                <tableViewController id="mOn-BS-JxC" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ordersVC" id="mOn-BS-JxC" customClass="OrdersVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3Ez-D8-QdG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
         <!--Orders-->
         <scene sceneID="Ctf-mn-9mx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="By5-Bh-Bsk" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="By5-Bh-Bsk" customClass="OrdersNavVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Orders" image="orders" id="nHR-cU-GSl"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

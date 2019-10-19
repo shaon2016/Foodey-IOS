@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class DataService {
-    static let instance = DataService()
+    
     var foodTableViewReloadDelegate : updateFoodTableViewDelegate?
     
     private var foods = [Food]()

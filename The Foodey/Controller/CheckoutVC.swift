@@ -65,24 +65,20 @@ class CheckoutVC: UIViewController {
     // MARK: POST Order portion
     
     func postOrder()  {
-        let alert = UIAlertController(title: "Post Order", message: "Are you sure to post this order?", preferredStyle: .alert)
         
-        let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+        
+        showAlert(alertControllerTitle: "Post Order", alertControllerMsg: "Are you sure to post this order?", positiveBtnTitle: "Yes", handler: { (action) in
             self.confirmOrder()
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        alert.addAction(yesAction)
-        alert.addAction(cancelAction)
-        present(alert, animated: true, completion: nil)
+        }, isToShowCancel: true)
     }
     
     func confirmOrder() {
+        SVProgressHUD.show()
         let url = "\(Constant.BASE_URL)post_order.php"
         let params = getNecessaryParamsForPostOrder()
         Alamofire.request(url, method: .post, parameters: params).responseJSON {
             response in
+            SVProgressHUD.dismiss()
             if response.result.isSuccess {
                 let jo = JSON(response.result.value!)
                 self.handlingPostOrderJSON(jo: jo)
@@ -97,10 +93,33 @@ class CheckoutVC: UIViewController {
         if status == 1 {
             // Order posted successfully
             print("Order posted successfully")
+            
+            // Delete cart
+            carts.forEach { (cart) in
+                PersistanceManager.pm.context.delete(cart)
+            }
+            
+            // load Root page
+            showAlert(alertControllerTitle: "Order Posted Successfully!", alertControllerMsg: "", positiveBtnTitle: "Go to Orders", handler: { (action) in
+                // Load order page
+                let vc = UIStoryboard.storyboard(storyboard: .Nav, bundle: nil).instantiateViewController(withIdentifier: "navVC") as! TabBarVC
+                
+                vc.setCurrentTabBarIndex(loadTabBarIndex: 1)
+                self.presentVC(vc)
+               
+            })
         } else {
             print("Credential mismatch")
         }
     }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destinationVC = segue.destination as? TabBarVC {
+//            destinationVC.setCurrentVC(load: OrdersVC())
+//        }
+//    }
+    
+    
     
     private func getNecessaryParamsForPostOrder() -> Dictionary<String, String> {
         var cartItemsJsonArray = Array<Dictionary<String, Any>>()

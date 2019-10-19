@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-98" y="9"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="Uqb-3g-Tit">
             <objects>
-                <tabBarController storyboardIdentifier="navVC" id="gZb-Ca-jlN" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="navVC" id="gZb-Ca-jlN" customClass="TabBarVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="1KK-Wt-Ndd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

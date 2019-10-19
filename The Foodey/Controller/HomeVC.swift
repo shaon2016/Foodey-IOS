@@ -10,7 +10,7 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, updateFoodTableViewDelegate{
     
-   
+    private let dataService = DataService()
     @IBOutlet weak var foodTable: UITableView!
     
     override func viewDidLoad() {
@@ -30,19 +30,19 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, upda
         foodTable.delegate = self
         foodTable.dataSource = self
 
-        DataService.instance.foodTableViewReloadDelegate = self
+        dataService.foodTableViewReloadDelegate = self
        
-        DataService.instance.loadFoods()
+        dataService.loadFoods()
     }
     
     // MARK: TableView delegate and datasource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.getFoods().count
+        return dataService.getFoods().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as? FoodCell {
-            let food = DataService.instance.getFoods()[indexPath.row]
+            let food = dataService.getFoods()[indexPath.row]
             cell.updateViews(f: food)
             
             return cell
@@ -58,7 +58,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate, upda
     }
   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let food = DataService.instance.getFoods()[indexPath.row]
+        let food = dataService.getFoods()[indexPath.row]
         performSegue(withIdentifier: "goToFoodDetails", sender: food)
     }
     

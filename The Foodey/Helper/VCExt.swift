@@ -34,4 +34,20 @@ extension UIViewController {
         let vc = UIStoryboard.storyboard(storyboard: .Auth).instantiateViewController(withIdentifier: "loginVC")
         presentVC(vc)
     }
+    
+    func showAlert(alertControllerTitle : String, alertControllerMsg : String, positiveBtnTitle : String = "Yes", handler: ((UIAlertAction) -> Void)? = nil , isToShowCancel : Bool = false) {
+        let alert = UIAlertController(title: alertControllerTitle, message: alertControllerMsg, preferredStyle: .alert)
+        
+        let yesAction = UIAlertAction(title: positiveBtnTitle, style: .default) { (action) in
+            handler?(action)
+        }
+        alert.addAction(yesAction)
+        
+        if isToShowCancel == true {
+             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alert.addAction(cancelAction)
+        }
+        
+        present(alert, animated: true, completion: nil)
+    }
 }

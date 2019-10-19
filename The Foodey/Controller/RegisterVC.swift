@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import SVProgressHUD
 
 class RegisterVC: UIViewController {
     private let signupURL = "login/views/signup.php"
@@ -34,8 +35,9 @@ class RegisterVC: UIViewController {
             let url = "\(Constant.BASE_URL)\(signupURL)"
             let params = [ "name" : name , "mobile" : mobile, "password" : password]
             
+            SVProgressHUD.show()
             Alamofire.request(url, method: .post, parameters : params).responseJSON { response in
-                
+                SVProgressHUD.dismiss()
                 if response.result.isSuccess {
                     let signupSON = JSON(response.result.value!)
                     
