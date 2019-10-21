@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--OrdersVC-->
+        <!--Orders-->
         <scene sceneID="emW-vb-1pa">
             <objects>
                 <tableViewController storyboardIdentifier="ordersVC" id="mOn-BS-JxC" customClass="OrdersVC" customModule="The_Foodey" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="mOn-BS-JxC" id="90M-c4-Ubs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="40j-jB-8YF"/>
+                    <navigationItem key="navigationItem" title="Orders" id="40j-jB-8YF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3O-Yf-yuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
