@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="orderedFoodCell" id="gTV-IL-0wX" customClass="OrderedFoodUICollectionViewCell" customModule="The_Foodey" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="217"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="217"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqO-Sa-PDa">
+                        <rect key="frame" x="0.0" y="0.0" width="236" height="217"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beats" translatesAutoresizingMaskIntoConstraints="NO" id="nlQ-Tg-fYD">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="BiO-6Z-rD3"/>
+                                    <constraint firstAttribute="width" constant="90" id="qGL-mJ-p8j"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUb-2H-aFy">
+                                <rect key="frame" x="8" y="94" width="82" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBx-Vu-hD7">
+                                <rect key="frame" x="8" y="112.5" width="82" height="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VUb-2H-aFy" firstAttribute="leading" secondItem="DqO-Sa-PDa" secondAttribute="leading" constant="8" id="2F8-0d-Pdq"/>
+                            <constraint firstItem="nlQ-Tg-fYD" firstAttribute="top" secondItem="DqO-Sa-PDa" secondAttribute="top" id="3at-ZB-bq3"/>
+                            <constraint firstItem="LBx-Vu-hD7" firstAttribute="leading" secondItem="DqO-Sa-PDa" secondAttribute="leading" constant="8" id="HKb-rY-pwY"/>
+                            <constraint firstItem="VUb-2H-aFy" firstAttribute="top" secondItem="nlQ-Tg-fYD" secondAttribute="bottom" constant="4" id="UmL-Sa-r0f"/>
+                            <constraint firstItem="VUb-2H-aFy" firstAttribute="trailing" secondItem="nlQ-Tg-fYD" secondAttribute="trailing" id="Una-cE-qUg"/>
+                            <constraint firstItem="LBx-Vu-hD7" firstAttribute="trailing" secondItem="VUb-2H-aFy" secondAttribute="trailing" id="bca-cf-wDX"/>
+                            <constraint firstItem="nlQ-Tg-fYD" firstAttribute="leading" secondItem="DqO-Sa-PDa" secondAttribute="leading" id="nMn-Sd-llg"/>
+                            <constraint firstItem="LBx-Vu-hD7" firstAttribute="top" secondItem="VUb-2H-aFy" secondAttribute="bottom" constant="2" id="tyH-5a-XcI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DqO-Sa-PDa" secondAttribute="bottom" id="Oh4-RJ-aGb"/>
+                <constraint firstAttribute="trailing" secondItem="DqO-Sa-PDa" secondAttribute="trailing" id="TpY-RD-j1Y"/>
+                <constraint firstItem="DqO-Sa-PDa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bCy-fA-cwS"/>
+                <constraint firstItem="DqO-Sa-PDa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gXc-KH-Gbm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="236" height="217"/>
+            <connections>
+                <outlet property="foodImage" destination="nlQ-Tg-fYD" id="9pd-9p-gUG"/>
+                <outlet property="priceLabel" destination="VUb-2H-aFy" id="OhZ-X3-Uuq"/>
+                <outlet property="quantityLabel" destination="LBx-Vu-hD7" id="qhW-qO-Eqo"/>
+            </connections>
+            <point key="canvasLocation" x="59.420289855072468" y="80.022321428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="beats" width="800" height="800"/>
+    </resources>
+</document>

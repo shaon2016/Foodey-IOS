@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		06981FC2CC7CE5BCEF1DA49D /* Pods_The_Foodey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */; };
+		CE029BBB235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE029BB9235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.swift */; };
+		CE029BBC235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE029BBA235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.xib */; };
 		CE02FF04235794480009EEB1 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02FF03235794480009EEB1 /* PersistanceManager.swift */; };
 		CE169B792354EE5300055E9C /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE169B782354EE5300055E9C /* CartVC.swift */; };
 		CE169B7C2354F4C100055E9C /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE169B7A2354F4C100055E9C /* CartTableViewCell.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		0D2E34865B0D37E3A9151CCA /* Pods_The_Foodey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Foodey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDE58C7B1F6AF881A4DE2DC /* Pods-The Foodey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Foodey.release.xcconfig"; path = "Target Support Files/Pods-The Foodey/Pods-The Foodey.release.xcconfig"; sourceTree = "<group>"; };
+		CE029BB9235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedFoodUICollectionViewCell.swift; sourceTree = "<group>"; };
+		CE029BBA235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderedFoodUICollectionViewCell.xib; sourceTree = "<group>"; };
 		CE02FF03235794480009EEB1 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		CE169B782354EE5300055E9C /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		CE169B7A2354F4C100055E9C /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 				CEDAF1A5235A5FE200107FF9 /* CheckoutUICollectionViewCell.swift */,
 				CEE5D3C8235CCE16008C9A79 /* OrdersTableViewCell.swift */,
 				CEE5D3C9235CCE16008C9A79 /* OrdersTableViewCell.xib */,
+				CE029BB9235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.swift */,
+				CE029BBA235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE029BBC235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.xib in Resources */,
 				CE6F3CF123435C69001C0599 /* Auth.storyboard in Resources */,
 				CEE9BA6023326B85000FAC42 /* LaunchScreen.storyboard in Resources */,
 				CEE5D3CB235CCE16008C9A79 /* OrdersTableViewCell.xib in Resources */,
@@ -364,6 +371,7 @@
 				CEE6E739233BF48C0051840A /* DataService.swift in Sources */,
 				CEE5D3CA235CCE16008C9A79 /* OrdersTableViewCell.swift in Sources */,
 				CE9EC846233F565D00FF25D6 /* User.swift in Sources */,
+				CE029BBB235DB48600A13BE2 /* OrderedFoodUICollectionViewCell.swift in Sources */,
 				CE5FC7432344EC9C0085B882 /* VCExt.swift in Sources */,
 				CEA0F92E235BAF7A00424492 /* OrdersVC.swift in Sources */,
 				CEE839B1235C96890027E733 /* CartModel.swift in Sources */,
